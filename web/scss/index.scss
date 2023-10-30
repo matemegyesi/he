@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+*, *::after, *::before{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Indie Flower', cursive;
+
+    margin: 0px;
+    padding: 0px;
+
+    nav{
+        ul{
+            display: flex;
+            justify-content: space-evenly;
+            list-style: none;
+            
+            a{
+                color: white;
+                font-size: 200%;
+            }
+        }
+    }
+    
+    #header{
+        background-image: url(../src/images/landingpage_slideshow_01.jpg);
+        height: 100vh;
+        background-size: cover;
+        background-position: center;
+    }
+}

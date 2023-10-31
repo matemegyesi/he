@@ -5,23 +5,40 @@
   box-sizing: border-box;
 }
 
-body {
+body .main {
   font-family: "Indie Flower", cursive;
   margin: 0px;
   padding: 0px;
-}
-body nav ul {
-  display: flex;
-  justify-content: space-evenly;
-  list-style: none;
-}
-body nav ul a {
   color: white;
-  font-size: 200%;
-}
-body #header {
   background-image: url(../src/images/landingpage_slideshow_01.jpg);
   height: 100vh;
   background-size: cover;
   background-position: center;
+}
+body .main .container {
+  background-color: rgba(179, 179, 179, 0.4);
+  margin-top: 20vh;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+}
+body .main .container h1 {
+  text-align: center;
+  font-size: 400%;
+}
+body .main nav {
+  padding-top: 15px;
+}
+body .main nav ul {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+}
+body .main nav ul a {
+  text-decoration: none;
+  color: white;
+  font-size: 2.5em;
+}
+body .main nav ul a:hover {
+  transition: font-size 0.5s ease-out;
+  font-size: 3.5em;
 }/*# sourceMappingURL=index.css.map */

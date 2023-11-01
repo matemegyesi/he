@@ -39,6 +39,26 @@ body .main nav ul a {
   font-size: 2.5em;
 }
 body .main nav ul a:hover {
-  transition: font-size 0.5s ease-out;
-  font-size: 3.5em;
+  text-decoration: underline;
+}
+body #slide {
+  transition: 1.5s;
+}
+body #slide:hover {
+  transform: translateX(100px);
+}
+
+.arrow {
+  opacity: 0;
+  transition: 1.5s;
+  transform: translateX(-50px);
+}
+
+.arrow-hover {
+  opacity: 1;
+  transform: translateX(10px);
+}
+
+.filter-white {
+  filter: invert(99%) sepia(100%) saturate(0%) hue-rotate(173deg) brightness(106%) contrast(100%);
 }/*# sourceMappingURL=index.css.map */

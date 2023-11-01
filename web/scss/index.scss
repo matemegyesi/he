@@ -46,11 +46,31 @@ body{
                     font-size: 2.5em;
                     
                     &:hover{
-                        transition: font-size .5s ease-out;
-                        font-size: 3.5em;
+                        text-decoration: underline;
                     }
                 }
             }
         }
     }
+    #slide{
+        transition: 1.5s;
+    }
+    #slide:hover{
+        transform: translateX(100px);
+    }
+
 }
+.arrow{
+    opacity: 0;
+    transition: 1.5s;
+    transform: translateX(-50px);
+}
+.arrow-hover{
+    opacity: 1;
+    transform: translateX(10px);
+}
+
+.filter-white{
+    filter: invert(99%) sepia(100%) saturate(0%) hue-rotate(173deg) brightness(106%) contrast(100%);
+}
+

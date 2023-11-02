@@ -22,30 +22,26 @@ function putarrow(id, corner) {
     arrow.style.position = 'absolute';
     arrow.classList.add('arrow');
 
+    const styles = {
+        'topright': { top: '0px', right: '0px' },
+        'topleft': { top: '0px', left: '0px' },
+        'bottomleft': { bottom: '0px', left: '0px' },
+        'bottomright': { bottom: '0px', right: '0px' },
+    };
+
     switch (corner) {
         case 'topright':
-            arrow.style.top = '0px';
-            arrow.style.right = '0px';
-            break;
         case 'topleft':
-            arrow.style.top = '0px';
-            arrow.style.left = '0px';
-            break;
         case 'bottomleft':
-            arrow.style.bottom = '0px';
-            arrow.style.left = '0px';
-            break;
         case 'bottomright':
-            arrow.style.bottom = '0px';
-            arrow.style.right = '0px';
+            Object.assign(arrow.style, styles[corner]);
             break;
         default:
             break;
     }
-    
 
     const image = document.createElement("img");
-    image.src = '/web/src/images/arrow.svg';
+    image.src = `/web/src/images/arrow.svg`;
     image.width = 100;
     image.height = 100;
     image.classList.add('filter-white');
@@ -53,12 +49,8 @@ function putarrow(id, corner) {
     arrow.appendChild(image);
     element.appendChild(arrow);
 
-    element.addEventListener('mouseover', function(){
-        arrow.classList.add('arrow-hover');
-    });
-    element.addEventListener('mouseleave', function(){
-        arrow.classList.remove('arrow-hover');
-    });
+    element.addEventListener('mouseover', () => arrow.classList.add('arrow-hover'));
+    element.addEventListener('mouseleave', () => arrow.classList.remove('arrow-hover'));
 }
 
 putarrow('slide', 'bottomright');

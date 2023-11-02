@@ -1,25 +1,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap");
 *, *::after, *::before {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
 body .main {
   font-family: "Indie Flower", cursive;
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   color: white;
-  background-image: url(../src/images/landingpage_slideshow_01.jpg);
+  background: url(../src/images/landingpage_slideshow_01.jpg) center/cover;
   height: 100vh;
-  background-size: cover;
-  background-position: center;
 }
 body .main .container {
   background-color: rgba(179, 179, 179, 0.4);
   margin-top: 20vh;
-  padding-top: 10vh;
-  padding-bottom: 10vh;
+  padding: 10vh 0;
 }
 body .main .container h1 {
   text-align: center;
@@ -53,7 +50,6 @@ body #slide:hover {
   transition: 1.5s;
   transform: translateX(-50px);
 }
-
 .arrow-hover {
   opacity: 1;
   transform: translateX(10px);

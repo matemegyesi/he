@@ -1,76 +1,66 @@
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
 
-*, *::after, *::before{
-    margin: 0px;
-    padding: 0px;
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
-body{
-    .main{
+
+body {
+    .main {
         font-family: 'Indie Flower', cursive;
-
-        margin: 0px;
-        padding: 0px;
-
+        margin: 0;
+        padding: 0;
         color: white;
-        
-        background-image: url(../src/images/landingpage_slideshow_01.jpg);
+        background: url(../src/images/landingpage_slideshow_01.jpg) center/cover;
         height: 100vh;
-        background-size: cover;
-        background-position: center;
 
-        .container{
-            
-            background-color: rgba($color: #b3b3b394, $alpha: 0.4);
+        .container {
+            $color: #b3b3b394;
+            background-color: rgba($color, 0.4);
             margin-top: 20vh;
-            padding-top: 10vh;
-            padding-bottom: 10vh;
-            
-            h1{
+            padding: 10vh 0;
+            h1 {
                 text-align: center;
                 font-size: 400%;
             }
         }
-        
-        nav{
-            padding-top: 15px;
 
-            ul{
+        nav {
+            padding-top: 15px;
+            ul {
                 display: flex;
                 justify-content: space-evenly;
                 list-style: none;
-                
-                a{
+                a {
                     text-decoration: none;
                     color: white;
                     font-size: 2.5em;
-                    
-                    &:hover{
+                    &:hover {
                         text-decoration: underline;
                     }
                 }
             }
         }
     }
-    #slide{
+    #slide {
         transition: 1.5s;
+        &:hover {
+            transform: translateX(100px);
+        }
     }
-    #slide:hover{
-        transform: translateX(100px);
-    }
-
 }
-.arrow{
+
+.arrow {
     opacity: 0;
     transition: 1.5s;
     transform: translateX(-50px);
-}
-.arrow-hover{
-    opacity: 1;
-    transform: translateX(10px);
+    &-hover {
+        opacity: 1;
+        transform: translateX(10px);
+    }
 }
 
-.filter-white{
+.filter-white {
     filter: invert(99%) sepia(100%) saturate(0%) hue-rotate(173deg) brightness(106%) contrast(100%);
 }
-

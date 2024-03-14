@@ -8,7 +8,30 @@
 
 ## ToDo
 
-- [ ] check
+- [ ] Player
+    - [ ] Control
+    - [ ] Movement
+    - [ ] Interactions
+    - [ ] Combat mechanics
+- [ ] Items
+    - [ ] Weapons
+    - [ ] Armor
+    - [ ] Consumables
+- [ ] Inventory
+    - [ ] UI design
+    - [ ] Item management
+- [ ] Spells
+    - [ ] Spell casting
+    - [ ] Spell effects
+    - [ ] Spellbook UI
+- [ ] Creatures
+    - [ ] AI behavior
+    - [ ] Enemy models and animations
+    - [ ] Combat AI
+- [ ] NPCs
+    - [ ] Quest givers
+    - [ ] Dialogue system
+    - [ ] NPC behavior
 
 ## Locations
 

@@ -9,8 +9,8 @@
 ## ToDo
 
 - [ ] Player
-    - [ ] Control
-    - [ ] Movement
+    - [x] Control
+    - [x] Movement
     - [ ] Interactions
     - [ ] Combat mechanics
 - [ ] Items
